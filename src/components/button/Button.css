@@ -1,0 +1,150 @@
+:root {
+  --local-background-color-neutral: hsl(211, 8%, 42%);
+  --local-background-color-neutral-hover: hsl(211, 8%, 32%);
+  --local-background-color-neutral-soft: hsl(210, 36%, 96%);
+  --local-background-color-neutral-soft-hover: hsl(205, 33%, 90%);
+
+  --local-background-color-primary: hsl(210, 90%, 42%);
+  --local-background-color-primary-hover: hsl(210, 90%, 32%);
+  --local-background-color-primary-soft: hsl(210, 75%, 94%);
+  --local-background-color-primary-soft-hover: hsl(210, 75%, 87%);
+
+  --local-background-color-success: hsl(120, 60%, 30%);
+  --local-background-color-success-hover: hsl(120, 60%, 20%);
+  --local-background-color-success-soft: hsl(120, 75%, 94%);
+  --local-background-color-success-soft-hover: hsl(120, 75%, 87%);
+
+  --local-background-color-danger: hsl(0, 75%, 44%);
+  --local-background-color-danger-hover: hsl(0, 75%, 34%);
+  --local-background-color-danger-soft: hsl(0, 80%, 94%);
+  --local-background-color-danger-soft-hover: hsl(0, 76%, 87%);
+
+  --local-background-color-warning: hsl(32, 78%, 34%);
+  --local-background-color-warning-hover: hsl(32, 78%, 24%);
+  --local-background-color-warning-soft: hsl(32, 88%, 94%);
+  --local-background-color-warning-soft-hover: hsl(32, 91%, 87%);
+
+  --default-color: rgb(255, 255, 255);
+}
+
+.button {
+  box-sizing: content-box;
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid gray;
+  text-transform: capitalize;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btnA:disabled,
+.btnA:disabled:hover {
+  background-color: transparent;
+  outline: none;
+  color: gray;
+}
+
+.btnB:disabled,
+.btnB:disabled:hover {
+  background-color: transparent;
+  outline: 1px solid gray;
+  color: gray;
+}
+
+.btnC:disabled,
+.btnC:disabled:hover {
+  background-color: #f0f4f8;
+  outline: none;
+  color: gray;
+}
+/* size */
+.sm {
+  padding: 4px 12px;
+  font-size: 0.875rem;
+}
+.md {
+  padding: 6px 16px;
+  font-size: 0.875rem;
+}
+.lg {
+  padding: 8px 24px;
+  font-size: 1rem;
+}
+
+/* Color */
+.neutral {
+  --background: var(--local-background-color-neutral);
+  --color: var(--default-color);
+  background-color: var(--background);
+  color: var(--color);
+  border: none;
+}
+
+.neutral:hover {
+  --background: var(--local-background-color-neutral-hover);
+  background-color: var(--background);
+}
+
+.primary {
+  --background: var(--local-background-color-primary);
+  --color: var(--default-color);
+  background-color: var(--background);
+  color: var(--color);
+  border: none;
+}
+
+.primary:hover {
+  --background: var(--local-background-color-primary-hover);
+  background-color: var(--background);
+}
+
+.success {
+  --background: var(--local-background-color-success);
+  --color: var(--default-color);
+  background-color: var(--background);
+  color: var(--color);
+  border: none;
+}
+
+.success:hover {
+  --background: var(--local-background-color-success-hover);
+  background-color: var(--background);
+}
+
+.danger {
+  --background: var(--local-background-color-danger);
+  --color: var(--default-color);
+  background-color: var(--background);
+  color: var(--color);
+  border: none;
+}
+.danger:hover {
+  --background: var(--local-background-color-danger-hover);
+  background-color: var(--background);
+}
+.warning {
+  --background: var(--local-background-color-warning);
+  --color: var(--default-color);
+  background-color: var(--background);
+  color: var(--color);
+  border: none;
+}
+.warning:hover {
+  --background: var(--local-background-color-warning-hover);
+  background-color: var(--background);
+}
+
+/* variant */
+
+.soft {
+  --background-soft: var();
+  --color: var();
+  --background-hover: var();
+  background-color: var(--background-soft);
+  color: var(--color);
+}
+.soft:hover {
+  background-color: var(--background-hover);
+}

@@ -1,0 +1,9 @@
+.button-group {
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 35px;
+  max-width: 950px;
+}
