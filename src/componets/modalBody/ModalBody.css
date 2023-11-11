@@ -1,0 +1,13 @@
+.modal {
+  margin-top: 15px;
+  border: 2px solid rgb(109, 101, 101);
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(125, 116, 116);
+  transition: all 0.5s;
+}
+
+.hide {
+  height: 0;
+  opacity: 0;
+}
