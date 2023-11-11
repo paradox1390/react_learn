@@ -1,0 +1,9 @@
+.item__header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.control__container {
+  display: flex;
+  gap: 15px;
+}
