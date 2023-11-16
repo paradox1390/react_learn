@@ -1,12 +1,12 @@
-import './App.css'
+import { Header } from "./sections/header"
+import { Main } from "./sections/main"
 
 function App() {
-
-
   return (
-    <>
-     <h1>Hello</h1>
-    </>
+    <div className="container mx-auto px-5">
+     <Header/>
+     <Main/>
+    </div>
   )
 }
 
