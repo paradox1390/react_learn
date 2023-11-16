@@ -4,8 +4,15 @@ export default {
   theme: {
     screens: {
       xl: "1024px",
+      lg: "750px",
+      md: "600px",
+      sm: "480px",
     },
-    extend: {},
+    extend: {
+      aspectRatio: {
+        "1/1.2": "1/1.2",
+      },
+    },
   },
   plugins: [],
 };
