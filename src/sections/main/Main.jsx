@@ -30,7 +30,6 @@ export const Main = () => {
                                 tags = {post.tags} 
                                 isAuthor = {post.userId == id}
                                 reactions = {post.reactions}
-                                id={post.userId}
                           />
                   })}
                   </div>}
