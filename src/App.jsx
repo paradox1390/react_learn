@@ -1,13 +1,17 @@
+import { Header } from "./sections/header"
+import { Main } from "./sections/main"
+import { AuthProvider } from "./provider/auth"
+import { IdUserProvider } from "./provider/idUser"
 
 function App() {
 
-
   return (
-    <>
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    </>
+    <AuthProvider>
+      <IdUserProvider>
+        <Header/>
+        <Main/>
+      </IdUserProvider>
+    </AuthProvider>
   )
 }
 
