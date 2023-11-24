@@ -6,12 +6,11 @@ import { getPost } from "../../services/getData"
 export const Main = () => {
   const [posts, setPosts] = useState([])
   const {id} = useIdUserContext()
-
+  
   useEffect(()=>{
    if(id){
      (async()=>{
        const data = await getPost()
-       console.log(data);
        setPosts(data.posts)
      })()
    }
