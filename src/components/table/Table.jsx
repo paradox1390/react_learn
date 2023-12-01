@@ -11,7 +11,7 @@ export const Table = ({row, col, onClick}) => {
     }
 
   return (
-    <table className='border-collapse: collapse;' onClick={onClick}>
+    <table onClick={onClick}>
         <tbody>
             {parse(table)}
         </tbody>

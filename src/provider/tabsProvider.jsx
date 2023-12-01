@@ -8,7 +8,6 @@ const addTabs = (ref)=>{
     tabs.push(ref)
 }
 
-
 export const TabsProvider = ({children})=>{
     const [activeTabs, setActiveTabs] = useState(null)
 
@@ -18,7 +17,6 @@ export const TabsProvider = ({children})=>{
     }
 
     return <TabsContext.Provider value={{addTabs, changeActiveTabs, activeTabs, setActiveTabs}}>
-
         {children}
     </TabsContext.Provider>
 }
