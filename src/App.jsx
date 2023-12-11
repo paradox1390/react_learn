@@ -1,14 +1,13 @@
+import { FormMultiStep } from "./components/FormMultiStep";
 
 function App() {
-
-
   return (
     <>
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <div className="max-w-md">
+        <FormMultiStep />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
