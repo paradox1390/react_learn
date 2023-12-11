@@ -1,7 +1,7 @@
+import { useState } from "react";
 import { Field, ErrorMessage, useFormikContext, FieldArray } from "formik";
 import icons, { socialIcons } from "../../icons";
 import { FieldSelection } from "../FieldSelection/";
-import { useState } from "react";
 export const ContactsStep = () => {
   const [selectFields, setSelectFields] = useState([]);
   const formik = useFormikContext();

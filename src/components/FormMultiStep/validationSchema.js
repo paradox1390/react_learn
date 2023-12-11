@@ -1,9 +1,7 @@
 import * as Yup from "yup";
-// matches(regexpLogin, "Start login with @")
 
 const regexpPhone = /^(38)\d{10}$/;
 const regexpLogin = /^(@).+$/;
-const maxDate = new Date().getFullYear() - 18;
 export default [
   Yup.object({
     toggle: Yup.boolean().oneOf(
