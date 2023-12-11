@@ -7,3 +7,18 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.custom-select__control {
+  border: none !important;
+  border-bottom: 1px solid rgb(209 213 219) !important;
+  border-radius: 0 !important;
+}
+
+.custom-select__control--is--focused {
+  outline: none !important;
+  border: none !important;
+}
+
+.custom-select__indicator-separator {
+  display: none !important;
+}
